@@ -18,7 +18,8 @@ Navegue pela interface:
 
 Clique na seta ao lado de cada método para expandir ou recolher as aulas.
 Marque as aulas como concluídas usando as caixas de seleção.
-Dentro das aulas use o perfil com imagem perfil.png para retornar a pagina principal do site index.html
+Dentro das aulas use o perfil com imagem perfil.png para retornar a pagina principal do site index.html.
+Em um dispositivo mobile vá até o final da pagina para estar alternando entre as aulas.
 Requisitos
 Um navegador moderno (Chrome, Firefox, Edge, etc.).
 Não há necessidade de instalar dependências adicionais.
