@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.progress {
+    font-size: 14px;
+}
+
+/* Container Principal */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Área de Conteúdo */
+.content-area {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.content-area h2 {
+    margin-top: 0;
+    color: #000;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#conteudo-dinamico {
+    padding: 20px;
+}
+
+#conteudo-dinamico img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Barra Lateral */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 2px solid #e4e4e4;
+    border-radius: 8px;
+}
+
+/* Títulos de Seção */
+.lessons h4 {
+    margin: 0;
+    color: #000;
+}
+
+/* Itens de Lição */
+.licao-item {
+    margin-bottom: 10px;
+}
+
+.licao-header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.licao-conteudo {
+    display: none;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+
+.arrow {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.licao-item.ativa .licao-conteudo {
+    display: block;
+}
+
+.licao-item.ativa .arrow {
+    transform: rotate(270deg); 
+}
+
+.lesson-progress {
+    color: #999;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        order: 1;
+    }
+
+    .user-profile {
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 2px solid #e4e4e4;
+        margin-top: 20px;
+    }
+
+    .content-area {
+        border-radius: 0;
+    }
+
+    .course-image {
+        margin-top: 5px;
+    }
+
+    .licao-header {
+        font-size: 14px;
+    }
+
+    .licao-conteudo {
+        padding: 5px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 15px;
+    }
+
+    .header-container h1 {
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+
+    .user-profile {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 2px solid #e4e4e4;
+        margin-top: 20px;
+    }
+
+    .content-area {
+        border-radius: 8px;
+    }
+
+    .course-image {
+        margin-top: 10px;
+    }
+
+    .licao-header {
+        font-size: 16px;
+    }
+
+    .licao-conteudo {
+        padding: 10px;
+    }
+}
+
+/* Responsivo Queries para desktops grandes */
+@media (min-width: 1200px) {
+    .header-container {
+        max-width: 1400px;
+    }
+
+    .main-container {
+        gap: 30px;
+    }
+
+    .content-area {
+        padding: 30px;
+    }
+
+    .sidebar {
+        padding: 30px;
+    }
+
+    .course-item {
+        width: 100%;
+    }
+}

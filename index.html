@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Agrinho</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagens/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Academia Agrinho</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Conectando o Campo à Cidade Através do Conhecimento</h2>
+            <p>Aprenda sobre agricultura, empreendedorismo e muito mais com nossos cursos online.</p>
+            <a href="#cursos" class="btn">Explore os Cursos</a>
+        </div>
+    </section>
+
+    <section id="cursos" class="courses-section">
+        <div class="container">
+            <h2>Nossos Cursos</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Agricultura Sustentável</h3>
+                    <p>Aprenda as melhores práticas de agricultura sustentável e como implementá-las.</p>
+                    <a href="dashboard/dashsustentavel.html" class="btn">Ver Curso</a>
+                </div>
+                <div class="course-item">
+                    <h3>Empreendedorismo Rural</h3>
+                    <p>Descubra como iniciar e gerenciar um negócio agrícola de sucesso e sustentável.</p>
+                    <a href="dashboard/dashrural.html" class="btn">Ver Curso</a>
+                </div>
+                <div class="course-item">
+                    <h3>Inovações em Tecnologias Agrícolas</h3>
+                    <p>Fique por dentro das últimas inovações tecnológicas na agricultura.</p>
+                    <a href="dashboard/dashtecnologias.html" class="btn">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-section">
+        <div class="container">
+            <h2>Sobre a Academia Agrinho</h2>
+            <p>A Academia Agrinho é uma plataforma de aprendizado dedicada a conectar o campo à cidade através do conhecimento. Oferecemos cursos básicos de qualidade sobre agricultura, empreendedorismo e tecnologias agrícolas, ajudando você a colher as oportunidades do campo na cidade.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Academia Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
